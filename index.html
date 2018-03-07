@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var next = true;
+        function create_person() {
+            var create = confirm("Начать создание обьектов");
+            if (create) {
+                var name = prompt("Имя");
+                var surname = prompt("Фамилия");
+                var age = prompt("Возраст");
+                var person = {};
+                person.name = name;
+                person.surname = surname;
+                person.age = age;
+                console.log(person);
+            }
+        }
+        console.log(next)
+        while (next) {
+            create_person()
+        }
+        next = confirm("Создать ли новый объект?");
+    </script>
+</body>
+</html>
